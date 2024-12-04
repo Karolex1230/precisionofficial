@@ -907,12 +907,16 @@ footer {
     transform: scale(1.05);
 }
 
-/* Media Query for Mobile Screens */
 @media (max-width: 768px) {
     .hero {
-        height: 60vh; /* Reduce height for mobile */
-        background-size: contain; /* Adjust image scaling */
+        height: auto; /* Adjust height for smaller screens */
+        min-height: 60vh; /* Ensure visibility */
     }
+    .hero-content {
+        padding: 20px;
+    }
+}
+
 
     .hero-content h1 {
         font-size: 32px; /* Smaller heading */
