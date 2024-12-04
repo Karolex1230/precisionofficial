@@ -235,6 +235,48 @@ footer {
     margin: 0 auto; /* Center the container */
     padding: 80px 20px 20px; /* Added 100px top padding to account for the header height */
 }
+/* Responsive Styles */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                padding: 20px;
+            }
+
+            .nav-logo img.logo {
+                height: 80px;
+            }
+
+            .nav-buttons {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .services-container {
+                padding: 40px 10px;
+            }
+
+            .service {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .service:nth-child(even) {
+                flex-direction: column;
+            }
+
+            .service img {
+                max-width: 100%;
+            }
+
+            .service-content {
+                align-items: center;
+                text-align: center;
+            }
+
+            .service-content a {
+                align-self: center;
+            }
+        }
 
         
     </style>
