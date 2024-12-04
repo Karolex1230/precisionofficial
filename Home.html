@@ -51,21 +51,24 @@
         }
         .navbar {
     display: flex;
-    justify-content: space-between; /* Space between logo and nav buttons */
-    align-items: center; /* Align items vertically */
-    padding: 20px 50px;
+    justify-content: space-between; /* Space between logo and navigation items */
+    align-items: center;
+    padding: 20px 50px; /* Padding for spacing */
 }
 
-        .nav-logo {
+.nav-logo {
     display: flex;
-    align-items: center; /* Align logo and text vertically */
-    gap: 10px; /* Space between logo and title */
+    align-items: center;
+    gap: 10px; /* Space between logo and any accompanying text */
+    margin-right: auto; /* Pushes the logo to the far left */
 }
+
 .nav-logo img.logo {
     height: 130px; /* Resize the logo */
     width: auto; /* Maintain aspect ratio */
-    display: block; /* Ensure the image does not overflow */
+    display: block; /* Ensure proper rendering */
 }
+
 .nav-logo span {
     font-size: 24px; /* Font size for the title */
     font-weight: bold;
