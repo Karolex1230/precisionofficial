@@ -392,6 +392,28 @@
     margin-top: 5px;
     color: white;
 }
+@media screen and (max-width: 768px) {
+    .price-list {
+        width: 100%; /* Full width on small screens */
+        padding: 15px;
+    }
+
+    .price-item {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+        text-align: center;
+    }
+
+    .car-sketch {
+        width: 80px;
+        height: 80px; /* Adjust image size for mobile */
+    }
+
+    .price-container {
+        flex-direction: column; /* Stack text below image */
+        gap: 10px;
+    }
+}
 
 
 </style>
