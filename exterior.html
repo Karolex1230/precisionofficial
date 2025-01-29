@@ -116,7 +116,7 @@
 
         .hero img {
             width: 60%;
-            max-height: 400px;
+            max-height: 600px;
             object-fit: cover;
             border-bottom: 2px solid #ff6600;
         }
@@ -224,10 +224,11 @@
     </header>
 
     <section class="hero">
-        <img src="clean1.jpg" alt="Hero Image">
+        <img src="clean1.1.jpg" alt="Hero Image">
     </section>
 
-    <section class="service-list">
+   <section class="service-container">
+    <div class="service-list">
         <h2>Our Services Include:</h2>
         <ul>
             <li>Snow Foam Pre Wash</li>
@@ -236,13 +237,165 @@
             <li>8 Week Protection Sealant</li>
             <li>Deep Wheel Clean</li>
             <li>Arches Scrubbed</li>
-			<li>Tyres Dressed</li>
-			<li>Windows Cleaned</li>
-			<li>Exhaust Tips Polished</li>
-			<li>Door Sills and Shuts Wiped</li>
-			<li>Car Dried With Premium Microfibre Towels</li>
+            <li>Tyres Dressed</li>
+            <li>Windows Cleaned</li>
+            <li>Exhaust Tips Polished</li>
+            <li>Door Sills and Shuts Wiped</li>
+            <li>Car Dried With Premium Microfibre Towels</li>
         </ul>
-    </section>
+    </div>
+
+    <div class="price-list">
+			<div class="price-item">
+    <div class="price-container">
+        <div class="car-sketch small"></div>
+        <div class="car-info">
+            <p>e.g. VW Golf, BMW 1 Series, Audi A3, Porsche Boxster</p>
+            <h1>Small Car</h1>
+            <p>$50</p>
+        </div>
+    </div>
+</div>
+
+        <div class="price-item">
+            <div class="car-sketch medium"></div>
+            <p>Medium Car</p>
+            <p>$70</p>
+        </div>
+        <div class="price-item">
+            <div class="car-sketch large"></div>
+            <p>Large Car</p>
+            <p>$90</p>
+        </div>
+        <div class="price-item">
+            <div class="car-sketch xlarge"></div>
+            <p>Extra Large Car</p>
+            <p>$120</p>
+        </div>
+    </div>
+</section>
+
+<style>
+    .service-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px;
+    }
+
+    .service-list {
+        width: 60%;
+        background: rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .price-list {
+        width: 35%;
+        background: rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .price-item {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .car-sketch {
+        width: 100px;
+        height: 50px;
+        margin-bottom: 10px;
+        background-color: orange;
+        border-radius: 10px;
+    }
+
+    .small {
+        background: url('small.png') no-repeat center center;
+        background-size: cover;
+    }
+
+    .medium {
+        background: url('medium-car-sketch.png') no-repeat center center;
+        background-size: cover;
+    }
+
+    .large {
+        background: url('large-car-sketch.png') no-repeat center center;
+        background-size: cover;
+    }
+
+    .xlarge {
+        background: url('xlarge-car-sketch.png') no-repeat center center;
+        background-size: cover;
+    }
+
+    .price-item p {
+        color: white;
+        margin-top: 10px;
+    }
+	.price-container {
+    display: flex;
+    align-items: center; /* Vertically align the image and text */
+    gap: 20px; /* Space between the image and the text */
+}
+
+.car-sketch {
+    width: 300px;
+    height: 50px;
+    background-color: orange;
+    border-radius: 10px;
+}
+
+.price-item h2 {
+    color: white;
+    margin: 0;
+}
+.price-list {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.price-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.car-sketch {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+}
+
+.price-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.car-info {
+    color: white;
+}
+
+.price-item h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.price-item p {
+    margin-top: 5px;
+    color: white;
+}
+
+
+</style>
+
 
     <a href="contact.html" class="quote-button">Get a Quote</a>
 

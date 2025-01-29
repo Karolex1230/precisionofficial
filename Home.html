@@ -217,7 +217,7 @@
 }
 
 .services h2 {
-    font-size: 2.5rem;
+    font-size: 1rem;
     margin-bottom: 30px;
     color: #ff6600; /* Orange heading */
     text-transform: uppercase;
@@ -453,12 +453,19 @@ footer {
     border-color: #ff6600; /* Adds orange border on hover */
     color: #ff6600; /* Changes icon color to orange */
 }
-.stars {
-    color: gold; /* Gold color for stars */
-    font-size: 35px; /* Adjust the size of the stars */
-    text-align: center; /* Center align stars */
-    margin-bottom: 10px; /* Add spacing below the stars */
+@keyframes shine {
+    0% { text-shadow: 0 0 5px gold; }
+    50% { text-shadow: 0 0 15px gold, 0 0 20px orange; }
+    100% { text-shadow: 0 0 5px gold; }
 }
+
+.stars {
+    color: gold;
+    font-size: 35px;
+    animation: shine 1s infinite alternate;
+}
+
+
 .avatar-circle {
     width: 80px; /* Circle width */
     height: 80px; /* Circle height */
@@ -589,6 +596,24 @@ footer {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .avatar-sally:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+.avatar-Ca {
+    background-color: purple; /* Dark Purple */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.avatar-Ca:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+.avatar-Tina {
+    background-color: green; /* Dark Purple */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.avatar-Tina:hover {
     transform: scale(1.1);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
@@ -747,7 +772,7 @@ footer {
 .hero {
     height: 100vh; /* Full height for desktops */
     background: linear-gradient(to bottom, rgba(255, 102, 0, 0.4), rgba(0, 0, 0, 0.8)),
-                url('Valet.webp') no-repeat center top;
+                url('Valet1.webp') no-repeat center top;
     background-size: cover; /* Ensure the image covers the container */
     background-attachment: fixed; /* Parallax effect for desktop */
     display: flex;
@@ -855,21 +880,30 @@ footer {
     <!-- About Section -->
     <section class="about">
     <h2>About Us - Precision Valet</h2>
-    <p>At Precision Valet, we believe your vehicle deserves nothing less than perfection. As a leading provider of professional car detailing services, we specialize in delivering exceptional quality and meticulous attention to detail that transforms your car into a masterpiece.</p>
+    <p>At Precision Valet, we believe that your car deserves nothing less than the utmost care and attention to detail. We are a premium car valet service dedicated to providing an unparalleled level of service that goes above and beyond your expectations. With our commitment to perfection, we are here to transform the way you experience car care.</p>
 
-    <p>Founded on a passion for excellence and a love for cars, Precision Valet has built a reputation for redefining auto care standards. From everyday vehicles to high-performance luxury cars, we treat every vehicle as if it were our own, ensuring unmatched care and precision in every service.</p>
+    <p>What sets Precision Valet apart from the rest? It's our unwavering dedication to precision. We understand that your car is not just a means of transportation; it's a reflection of your personality and style. That's why we treat every vehicle that comes through our doors as if it were our own.
+When we arrive at your location, we will perform a thorough inspection of your vehicle alongside you, encouraging you to point out any specific issues that may be on your mind. This collaborative approach allows us to accurately note your concerns on our drop-off checklist. We appreciate that not everyone has the same preferences for finishing touches, whether it be dressings for plastics, tire finish or the scent of air fresheners, to accommodate your unique tastes, we offer an extensive range of products for you to choose from, ensuring your car meets your desired aesthetic.</p>
 
-    <p>Our team of skilled professionals uses cutting-edge techniques, industry-leading products, and years of expertise to restore and protect your vehicle. Whether it’s a comprehensive interior cleaning, an exterior enhancement, or advanced ceramic coating, we tailor every service to meet the unique needs of your car, ensuring showroom-worthy results every time.</p>
-
-    <h3>Why Choose Precision Valet?</h3>
+    <p>We aim to deliver a level of service that is second to none. From the moment you entrust your car to us, we will handle it with the utmost professionalism and expertise. We use only the finest quality products and techniques to ensure that your vehicle is restored to its original condition.</p>
+	
+	<p>Whether you're looking for a Full Detail, Machine polish, a Ceramic protection treatment, or a complete Showroom  detailing package, Precision Valet has you covered. Our range of services is designed to cater to the unique needs of each individual client, ensuring that your car receives the exact care it deserves.</p>
+	
+	<p>At Precision Valet, we believe that convenience is key. That's why we offer a range of flexible options to fit seamlessly into your busy schedule. Whether you prefer to drop off your car with us or try out our mobile valeting option and well come to you at NO EXTRA CHARGE, we make it easy for you to experience the luxury of Precision Valet wherever you are.</p>
+	
+	<p>We pride ourselves on building long-lasting relationships with our clients. We strive to exceed your expectations every time you choose us for your car care, and we are committed to our customer satisfaction.Your car is in the hands of a professional who’s passionate about what they do, and we guarantee that you will be amazed by the results.</p>
+    
+	<p>So, why settle for anything less than perfection? Experience the Precision Valet difference and elevate your car care to a whole new level. Contact us today to book your appointment, Your Car - Our Passion.</p>
+	
+	<!---<h3>Why Choose Precision Valet?</h3>
     <ul>
         <li>Attention to Detail: Every inch of your car is meticulously cared for, from the wheels to the windshield.</li>
         <li>Premium Products: We use only the best detailing products to ensure a lasting finish and top-notch protection.</li>
         <li>Expert Craftsmanship: Our team combines experience, skill, and a dedication to perfection to deliver results that exceed expectations.</li>
         <li>Customer Satisfaction: At Precision Valet, we pride ourselves on creating an exceptional experience for every client. Your satisfaction drives our passion.</li>
-    </ul>
+    </ul>---!>
 
-    <p>Your car deserves the best—because it’s more than just a vehicle, it’s your pride and joy. Let us help you maintain it in pristine condition.</p>
+    <!--<p>Your car deserves the best—because it’s more than just a vehicle, it’s your pride and joy. Let us help you maintain it in pristine condition.</p>--!>
 
     <a href="Contact.html" class="cta-button">Contact Us Today
 	for a quote</a>
@@ -880,22 +914,39 @@ footer {
         <div class="service-item">
             <img src="precision.1.png" alt="Precision 1">
             <h3>Precision 1</h3>
+			<h2> Maintenance Detail </h2>
             <p>Experience the ultimate in care and attention, leaving your vehicle flawlessly clean and gleaming like new.</p>
-            <p class="price">FROM £59</p>
+            <p class="price">FROM £69</p>
             <a href="Contact.html" class="cta-button">GET A QUOTE</a>
         </div>
         <div class="service-item">
             <img src="precision.2.png" alt="Precision 2">
             <h3>Precision 2</h3>
-            <p>Elevate your vehicle's appearance with a premium wash and wax, delivering a showroom-ready finish that lasts.</p>
-            <p class="price">FROM £79</p>
+            <p>The perfect initial service before moving on to our Maintenance Detail. Our Full Detail covers all aspects of your vehicle, including a deep clean of interior and exterior.</p>
+            <p class="price">FROM £99</p>
             <a href="Contact.html" class="cta-button">GET A QUOTE</a>
         </div>
         <div class="service-item">
             <img src="showroom.png" alt="Showroom">
             <h3>Showroom</h3>
+            <p> Our Showroom Detail gives your vehicle a new lease of life transforming it into immaculate condition. 
+This package covers every aspect, including a deep clean of the interior, exterior and engine bay then finishing off with a hand polish leaving a deep glossy showroom finish.</p>
+            <p class="price">FROM £169</p>
+            <a href="Contact.html" class="cta-button">GET A QUOTE</a>
+        </div>
+		<div class="service-item">
+            <img src="showroom.png" alt="Showroom">
+            <h3>Enhancement Detail</h3>
             <p> Unmatched brilliance and long-lasting protection, giving your vehicle a flawless gloss worthy of the spotlight.</p>
-            <p class="price">FROM £119</p>
+            <p class="price">FROM £199</p>
+            <a href="Contact.html" class="cta-button">GET A QUOTE</a>
+        </div>
+		<div class="service-item">
+            <img src="showroom1.jpg" alt="Showroom">
+            <h3>New Car Detail</h3>
+            <p> Restoring your vehicle back to factory condition while adding superior protection.
+Deep clean of the interior and exterior including a claybar treatment, enhancement polish and 12 month Ceramic coating on paintwork, wheel, glass and trim.</p>
+            <p class="price">FROM £330</p>
             <a href="Contact.html" class="cta-button">GET A QUOTE</a>
         </div>
     </div>
@@ -903,7 +954,39 @@ footer {
     <!-- Testimonials Section -->
     <section class="testimonials">
         <h2>What Our Clients Say</h2>
+		
         <div class="testimonial-list">
+		<div class="testimonial-item">
+		<div class="stars">
+        &#9733; &#9733; &#9733; &#9733; &#9733;
+    </div>
+            <p>"Highly recommend first class customer service and an even better result."</p>
+            <h4>- Joe Mc Keown</h4>
+			<div class="avatar-circle avatar-Joe">
+        J
+    </div>
+        </div>
+		<div class="testimonial-item">
+		<div class="stars">
+        &#9733; &#9733; &#9733; &#9733; &#9733;
+    </div>
+            <p>"Booked Precision Valet to clean my hubbys car which was extremely dirty inside and outside. Tiernan came to the house and worked tirelessly to have it perfect. He even came back the next morning to finish it as it had been getting dark and he wasn’t happy with the floor. The car is sitting like a new pin!!!  
+This young lad takes such care and pride in his work and is so professional. He is so courteous and friendly and a pleasure to deal with. I can’t wait until he cleans my car. 100% recommended +++AAA."</p>
+            <h4>- Tina Green</h4>
+			<div class="avatar-circle avatar-Tina">
+        T
+    </div>
+        </div>
+		<div class="testimonial-item">
+		<div class="stars">
+        &#9733; &#9733; &#9733; &#9733; &#9733;
+    </div>
+            <p>"Class job done and great service couldn’t be happier outside and inside spotless any Steens or marks on the car are now gone would 100% recommend."</p>
+            <h4>- Caoilfhinn O'Kane</h4>
+			<div class="avatar-circle avatar-Ca">
+        C
+    </div>
+        </div>
                <div class="testimonial-item">
 			   <div class="stars">
         &#9733; &#9733; &#9733; &#9733; &#9733;
